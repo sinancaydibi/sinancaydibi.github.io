@@ -76,11 +76,25 @@ export const resumeDataEN: ResumeData = {
   skills: [
     {
       category: "Frontend",
-      items: ["Next.js", "React", "Angular", "TypeScript", "Ionic", "TailwindCSS", "PrimeNG"],
+      items: [
+        "Next.js",
+        "React",
+        "Angular",
+        "TypeScript",
+        "Ionic",
+        "TailwindCSS",
+        "PrimeNG",
+      ],
     },
     {
       category: "Backend",
-      items: ["Spring Boot (Java)", "Node.js", "Flask (Python)", "RESTful APIs", "WebSockets"],
+      items: [
+        "Spring Boot (Java)",
+        "Node.js",
+        "Flask (Python)",
+        "RESTful APIs",
+        "WebSockets",
+      ],
     },
     {
       category: "Databases",
@@ -183,11 +197,25 @@ export const resumeDataTR: ResumeData = {
   skills: [
     {
       category: "Frontend",
-      items: ["Next.js", "React", "Angular", "TypeScript", "Ionic", "TailwindCSS", "PrimeNG"],
+      items: [
+        "Next.js",
+        "React",
+        "Angular",
+        "TypeScript",
+        "Ionic",
+        "TailwindCSS",
+        "PrimeNG",
+      ],
     },
     {
       category: "Backend",
-      items: ["Spring Boot (Java)", "Node.js", "Flask (Python)", "RESTful APIs", "WebSockets"],
+      items: [
+        "Spring Boot (Java)",
+        "Node.js",
+        "Flask (Python)",
+        "RESTful APIs",
+        "WebSockets",
+      ],
     },
     {
       category: "Veri Tabanı",

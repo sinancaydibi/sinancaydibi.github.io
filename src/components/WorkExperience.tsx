@@ -78,7 +78,9 @@ function ExperienceEntry({ entry }: { entry: Experience }) {
       </p>
 
       {entry.promotions && (
-        <p className="text-xs italic text-accent/80 mt-1 mb-2 bg-accent/5 px-2 py-1 rounded border-l-2 border-accent/30">{entry.promotions}</p>
+        <p className="text-xs italic text-accent/80 mt-1 mb-2 bg-accent/5 px-2 py-1 rounded border-l-2 border-accent/30">
+          {entry.promotions}
+        </p>
       )}
 
       <ul className="space-y-2 mt-3">

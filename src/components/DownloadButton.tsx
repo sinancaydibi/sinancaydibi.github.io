@@ -47,9 +47,7 @@ export function DownloadButton({ name, label }: DownloadButtonProps) {
       ) : (
         <Download size={16} className="shrink-0" />
       )}
-      <span className="hidden sm:inline">
-        {generating ? "..." : label}
-      </span>
+      <span className="hidden sm:inline">{generating ? "..." : label}</span>
     </button>
   );
 }

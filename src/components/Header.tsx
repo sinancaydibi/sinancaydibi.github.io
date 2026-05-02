@@ -22,34 +22,58 @@ export function Header({ name, title, contact }: HeaderProps) {
       <a key="email" href={`mailto:${contact.email}`} className={linkClass}>
         <Mail size={iconSize} />
         <span>{contact.email}</span>
-      </a>
+      </a>,
     );
   }
 
   if (contact.portfolio) {
     items.push(
-      <a key="portfolio" href={contact.portfolio} target="_blank" rel="noopener noreferrer" className={linkClass}>
+      <a
+        key="portfolio"
+        href={contact.portfolio}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+      >
         <Globe size={iconSize} />
         <span>{contact.portfolio.replace(/^https?:\/\//, "")}</span>
-      </a>
+      </a>,
     );
   } else if (contact.linkedin) {
-    const url = contact.linkedin.startsWith("http") ? contact.linkedin : `https://linkedin.com/in/${contact.linkedin}`;
+    const url = contact.linkedin.startsWith("http")
+      ? contact.linkedin
+      : `https://linkedin.com/in/${contact.linkedin}`;
     items.push(
-      <a key="linkedin" href={url} target="_blank" rel="noopener noreferrer" className={linkClass}>
+      <a
+        key="linkedin"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+      >
         <Linkedin size={iconSize} />
-        <span>{contact.linkedin.replace(/^https?:\/\/(www\.)?linkedin\.com\/in\//, "")}</span>
-      </a>
+        <span>
+          {contact.linkedin.replace(/^https?:\/\/(www\.)?linkedin\.com\/in\//, "")}
+        </span>
+      </a>,
     );
   }
 
   if (contact.github) {
-    const url = contact.github.startsWith("http") ? contact.github : `https://github.com/${contact.github}`;
+    const url = contact.github.startsWith("http")
+      ? contact.github
+      : `https://github.com/${contact.github}`;
     items.push(
-      <a key="github" href={url} target="_blank" rel="noopener noreferrer" className={linkClass}>
+      <a
+        key="github"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass}
+      >
         <Github size={iconSize} />
         <span>{contact.github.replace(/^https?:\/\/(www\.)?github\.com\//, "")}</span>
-      </a>
+      </a>,
     );
   }
 
@@ -58,15 +82,13 @@ export function Header({ name, title, contact }: HeaderProps) {
       <div key="location" className="flex items-center gap-1.5">
         <MapPin size={iconSize} />
         <span>{contact.location}</span>
-      </div>
+      </div>,
     );
   }
 
   return (
     <header className="mb-10 print:mb-8 text-center">
-      <h1 className="text-3xl font-bold tracking-tight text-primary mb-1">
-        {name}
-      </h1>
+      <h1 className="text-3xl font-bold tracking-tight text-primary mb-1">{name}</h1>
       <p className="text-lg sm:text-xl font-medium text-muted/80 mb-4 tracking-tight">
         {title}
       </p>

@@ -16,7 +16,8 @@ export default function App() {
   const data = lang === "en" ? resumeDataEN : resumeDataTR;
   const t = translations[lang];
 
-  const { name, title, summary, contact, experience, education, skills, certifications } = data;
+  const { name, title, summary, contact, experience, education, skills, certifications } =
+    data;
 
   const hasAutoDownloaded = useRef(false);
 
@@ -82,14 +83,19 @@ export default function App() {
               <Skills title={t.skills} skills={skills} />
               <EducationSection title={t.education} education={education} />
               {certifications && certifications.length > 0 && (
-                <Certifications title={t.certifications} certifications={certifications} />
+                <Certifications
+                  title={t.certifications}
+                  certifications={certifications}
+                />
               )}
             </aside>
           </div>
         </div>
       </div>
 
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
         @media print {
           .page {
             margin: 0 !important;
@@ -98,7 +104,9 @@ export default function App() {
             max-width: 100% !important;
           }
         }
-      `}} />
+      `,
+        }}
+      />
     </>
   );
 }

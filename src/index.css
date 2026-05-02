@@ -30,7 +30,9 @@
     @apply bg-white mx-auto;
     width: 100%;
     max-width: 900px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
   }
 
   /* On smaller screens: full-bleed, white fills viewport */

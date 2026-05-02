@@ -17,7 +17,9 @@ export function EducationSection({ education, title }: EducationSectionProps) {
         {education.map((entry, idx) => (
           <div key={idx} className="group">
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-bold text-accent tracking-wider">{entry.period}</span>
+              <span className="text-xs font-bold text-accent tracking-wider">
+                {entry.period}
+              </span>
               <h3 className="text-base font-bold text-primary leading-snug group-hover:text-accent transition-colors">
                 {entry.degree}
               </h3>

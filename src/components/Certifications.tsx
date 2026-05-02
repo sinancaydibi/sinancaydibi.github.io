@@ -25,7 +25,9 @@ export function Certifications({ certifications, title }: CertificationsProps) {
               </h3>
               <p className="text-xs font-medium text-muted mt-0.5">
                 {cert.issuer}
-                {cert.date && <span className="ml-1.5 text-divider">&middot; {cert.date}</span>}
+                {cert.date && (
+                  <span className="ml-1.5 text-divider">&middot; {cert.date}</span>
+                )}
               </p>
             </div>
           </div>
