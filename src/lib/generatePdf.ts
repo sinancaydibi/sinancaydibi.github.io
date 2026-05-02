@@ -39,11 +39,7 @@ export async function generateResumePdf(
   setTimeout(cleanup, 3000);
 }
 
-/**
- * Derive a kebab-cased PDF filename from a person's name.
- *
- * @example toResumeFilename("Sinan Çaydibi") → "erwin-lejeune-resume.pdf"
- */
+
 export function toResumeFilename(name: string): string {
-  return `${name.toLowerCase().replace(/\s+/g, "-")}-resume.pdf`;
+  return `${name.toLowerCase().replace(/\s+/g, "-")}.pdf`;
 }
