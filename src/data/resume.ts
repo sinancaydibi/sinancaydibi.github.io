@@ -23,7 +23,7 @@ export const resumeDataEN: ResumeData = {
       ],
     },
     {
-      company: "Galileo Medical Technologies",
+      company: "Galileo Healthcare Technologies",
       role: "Software Specialist",
       period: "2022 – 2025",
       bullets: [
@@ -144,7 +144,7 @@ export const resumeDataTR: ResumeData = {
       ],
     },
     {
-      company: "Galileo Medical Technologies",
+      company: "Galileo Tıp Teknolojileri",
       role: "Yazılım Uzmanı",
       period: "2022 – 2025",
       bullets: [
