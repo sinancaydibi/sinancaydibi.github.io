@@ -39,7 +39,6 @@ export async function generateResumePdf(
   setTimeout(cleanup, 3000);
 }
 
-
 export function toResumeFilename(name: string): string {
   return `${name.toLowerCase().replace(/\s+/g, "-")}.pdf`;
 }
