@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #0f172a;
+  --color-accent: #3b82f6; /* Modern Blue */
+  --color-accent-dark: #1d4ed8;
+  --color-muted: #475569;
+  --color-surface: #f8fafc;
+  --color-divider: #f1f5f9;
+  --color-page-bg: #f1f5f9;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-page-bg text-primary leading-relaxed antialiased font-sans;
+    background: radial-gradient(circle at top left, #f8fafc 0%, #f1f5f9 100%);
+    min-height: 100vh;
+  }
+
+  /* ---- Resume sheet ---- */
+  .page {
+    @apply bg-white mx-auto;
+    width: 100%;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* On smaller screens: full-bleed, white fills viewport */
+  @media (max-width: 768px) {
+    body {
+      @apply bg-white;
+    }
+    .page {
+      @apply my-0 rounded-none shadow-none;
+    }
+  }
+
+  /* Print: no shadow, no margin, no background */
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 10mm;
+    }
+
+    body {
+      @apply bg-white;
+      background: none !important;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 100% !important;
+      margin: 0 !important;
+      box-shadow: none !important;
+      border: none !important;
+      border-radius: 0 !important;
+    }
+
+    .print\:hidden {
+      display: none !important;
+    }
+  }
+}
+
+/* Custom Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section-title {
+  @apply text-sm font-bold uppercase tracking-[0.15em] text-accent mb-6 border-l-4 border-accent pl-4 py-0.5;
+}
+
+.experience-item {
+  @apply relative pl-8 pb-8 last:pb-0;
+}
+
+.experience-item::before {
+  content: "";
+  @apply absolute left-[3.5px] top-[5px] h-full w-[1px] bg-divider;
+}
+
+.experience-item:last-child::before {
+  @apply h-0;
+}
+
+.experience-dot {
+  @apply absolute left-0 top-[5px] h-2 w-2 rounded-full bg-accent ring-4 ring-white;
+}
