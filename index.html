@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinan Çaydibi | Yazılım Uzmanı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .gradient-bg {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      }
+      .skill-badge {
+        transition: all 0.3s ease;
+      }
+      .skill-badge:hover {
+        transform: translateY(-3px);
+        background-color: #3b82f6;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-900">
+    <!-- Navigasyon -->
+    <nav
+      class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-slate-100"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-extrabold tracking-tight text-slate-900 underline decoration-blue-500"
+          >SİNAN ÇAYDİBİ</span
+        >
+        <div
+          class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest"
+        >
+          <a href="#about" class="hover:text-blue-600 transition">Özet</a>
+          <a href="#experience" class="hover:text-blue-600 transition"
+            >Deneyim</a
+          >
+          <a href="#skills" class="hover:text-blue-600 transition"
+            >Yetenekler</a
+          >
+          <a href="#contact" class="hover:text-blue-600 transition">İletişim</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Bölümü -->
+    <header class="pt-40 pb-24 bg-slate-50 border-b border-slate-200">
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12"
+      >
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-4">
+            Yazılım Uzmanı
+          </h1>
+          <p class="text-xl text-slate-600 mb-8 max-w-2xl leading-relaxed">
+            5 yıllık tecrübemle, kullanıcı odaklı web arayüzlerinden karmaşık
+            veri yönetim sistemlerine kadar geniş bir yelpazede yüksek
+            performanslı çözümler üretiyorum.
+          </p>
+          <div class="flex flex-wrap justify-center md:justify-start gap-4">
+            <a
+              href="mailto:caydibisinan@gmail.com"
+              class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:shadow-lg transition flex items-center"
+            >
+              <i class="fas fa-paper-plane mr-2"></i> İletişime Geç
+            </a>
+            <a
+              href="https://github.com/SinanCaydibi"
+              target="_blank"
+              class="border-2 border-slate-900 px-8 py-3 rounded-lg font-bold hover:bg-slate-900 hover:text-white transition"
+            >
+              GitHub Profili
+            </a>
+          </div>
+        </div>
+        <div class="w-64 h-64 md:w-80 md:h-80 relative">
+          <div
+            class="absolute inset-0 bg-blue-500 rounded-2xl rotate-6 -z-10"
+          ></div>
+          <img
+            src="profil.jpg"
+            alt="Sinan Çaydibi"
+            class="w-full h-full rounded-2xl object-cover shadow-2xl"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20">
+      <!-- Özet / Vizyon -->
+      <section id="about" class="grid md:grid-cols-3 gap-12 mb-32">
+        <div class="md:col-span-1">
+          <h2
+            class="text-sm font-bold text-blue-600 uppercase tracking-[0.2em]"
+          >
+            Hakkımda
+          </h2>
+          <h3 class="text-3xl font-bold mt-2">Mühendislik Yaklaşımı</h3>
+        </div>
+        <div class="md:col-span-2 text-lg text-slate-600 leading-relaxed">
+          <p class="mb-4">
+            **SinanCaydibi.pdf** dosyasında detaylandırıldığı üzere, Bilgisayar
+            Mühendisi kimliğimle yazılım süreçlerinin her aşamasında aktif rol
+            alıyorum. Sadece arayüz değil; RESTful API entegrasyonları, gerçek
+            zamanlı veri akışları (WebSocket) ve güvenli kimlik doğrulama
+            sistemleri konularında uzmanlaştım.
+          </p>
+          <p>
+            Çözüm odaklı, teknik detaylara hakim ve modern UI/UX standartlarını
+            yazılımın kalbine yerleştiren bir yaklaşım benimsiyorum.
+          </p>
+        </div>
+      </section>
+
+      <!-- İş Deneyimi -->
+      <section id="experience" class="mb-32">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-4xl font-black tracking-tight">İş Deneyimi</h2>
+          <div class="h-1 bg-blue-500 flex-grow ml-8 hidden md:block"></div>
+        </div>
+
+        <div class="space-y-16">
+          <!-- LÖSEV -->
+          <div class="grid md:grid-cols-4 gap-4">
+            <div class="text-slate-400 font-bold tracking-tighter">
+              2025 - GÜNÜMÜZ
+            </div>
+            <div class="md:col-span-3">
+              <h3 class="text-2xl font-bold">LÖSEV - Yazılım Uzmanı</h3>
+              <p class="mt-4 text-slate-600">
+                Bağışçı ve gönüllü yönetim sistemlerinin geliştirilmesi,
+                etkinlik yönetim modülleri ve veri doğrulama iş akışlarının
+                uçtan uca yönetilmesi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Galileo -->
+          <div class="grid md:grid-cols-4 gap-4 border-t border-slate-100 pt-8">
+            <div class="text-slate-400 font-bold tracking-tighter">
+              2022 - 2025
+            </div>
+            <div class="md:col-span-3">
+              <h3 class="text-2xl font-bold">
+                Galileo Medical Technologies - Yazılım Uzmanı
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Klinik bilgi sistemleri, tıbbi geçmiş takibi ve donanım
+                entegrasyonu (kamera, sensör). AI chatbot platformu tasarımı ve
+                gerçek zamanlı veri yönetimi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Ertunç Özcan -->
+          <div class="grid md:grid-cols-4 gap-4 border-t border-slate-100 pt-8">
+            <div class="text-slate-400 font-bold tracking-tighter">
+              2021 - 2025
+            </div>
+            <div class="md:col-span-3">
+              <h3 class="text-2xl font-bold">
+                Ertunç Özcan Medical R&D - Yazılım Uzmanı
+              </h3>
+              <p class="mt-4 text-slate-600">
+                Otel dezenfeksiyon süreçlerinin dijitalleştirilmesi. Yazılım
+                Gereksinim Belgesi (SRS) ve Tasarım Dokümanı (SDD) hazırlama
+                süreçlerinde aktif rol.
+              </p>
+            </div>
+          </div>
+
+          <!-- Military -->
+          <div class="grid md:grid-cols-4 gap-4 border-t border-slate-100 pt-8">
+            <div class="text-slate-400 font-bold tracking-tighter">
+              2020 - 2021
+            </div>
+            <div class="md:col-span-3">
+              <h3 class="text-2xl font-bold">TSK Dil Okulu - Yazılım Uzmanı</h3>
+              <p class="mt-4 text-slate-600">
+                Çok dilli eğitim portalı geliştirilmesi ve responsive
+                arayüzlerin bağımsız olarak tasarlanıp hayata geçirilmesi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Yetenekler -->
+      <section id="skills" class="mb-32">
+        <h2 class="text-3xl font-bold mb-12 text-center">Teknoloji Yığını</h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >React</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >Angular</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >TypeScript</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >JavaScript</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >TailwindCSS</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >Firebase</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >REST API</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >Git / GitHub</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >Jira / Agile</span
+          >
+          <span
+            class="skill-badge bg-slate-100 px-6 py-3 rounded-full font-medium"
+            >PWA</span
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- İletişim Footer -->
+    <footer id="contact" class="bg-slate-900 text-white py-20 px-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <div class="mb-8 md:mb-0 text-center md:text-left">
+          <h2 class="text-3xl font-bold mb-2">Sinan Çaydibi</h2>
+          <p class="text-slate-400">Bilgisayar Mühendisi | Yazılım Uzmanı</p>
+        </div>
+        <div class="flex gap-8 text-3xl">
+          <a
+            href="https://linkedin.com/in/caydibisinan/"
+            target="_blank"
+            class="hover:text-blue-400 transition"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/SinanCaydibi"
+            target="_blank"
+            class="hover:text-slate-400 transition"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="mailto:caydibisinan@gmail.com"
+            class="hover:text-red-400 transition"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div
+        class="max-w-6xl mx-auto mt-12 pt-8 border-t border-slate-800 text-sm text-slate-500 text-center"
+      >
+        &copy; 2026 Tüm hakları saklıdır.
+      </div>
+    </footer>
+  </body>
+</html>
